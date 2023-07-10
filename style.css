@@ -1,0 +1,309 @@
+.navbar{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    padding: 25px 15px;
+}
+.logo_name{
+  background: -webkit-linear-gradient(90deg, rgba(9,2,126,1) 0%, rgba(9,79,121,1) 33%, rgba(0,255,158,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 10px;
+}
+.navbar a{
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.navbar a:hover{
+    background: -webkit-linear-gradient(90deg, rgba(9,2,126,1) 0%, rgba(9,79,121,1) 33%, rgba(0,255,158,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.navbar img{
+    margin-top: -10px;
+}
+.navbar-toggler{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transition: .5s ease-in-out;
+}
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus{
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+.navbar-toggler span{
+    margin: 0;
+    padding: 0;
+}
+.toggler-icon{
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: rgb(9,2,126);
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+.middle-bar{
+    margin-top: 0;
+}
+/* ---------when navigation is clicked-------- */
+.navbar-toggler .top-bar{
+    margin-top: 0;
+    transform: rotate(135deg);
+}
+.navbar-toggler .middle-bar{
+    opacity: 0;
+    filter:alpha(opacity=0);
+}
+.navbar-toggler .bottom-bar{
+    margin-top: 0;
+    transform: rotate(-135deg);
+}
+
+/*---state when collapsed---*/
+.navbar-toggler.collapsed .top-bar{
+    margin-top: -20px;
+    transform: rotate(0deg);
+}
+.navbar-toggler.collapsed .middle-bar{
+    opacity: 1;
+    filter:alpha(opacity=100);
+}
+.navbar-toggler.collapsed .bottom-bar{
+    margin-top: 20px;
+    transform: rotate(0deg);
+}
+
+/*----color of 3 lines-----*/
+.navbar-toggler.collapsed .toggler-icon{
+    background: rgb(9,2,126);
+    background: linear-gradient(90deg, rgba(9,2,126,1) 0%, rgba(9,79,121,1) 33%, rgba(0,255,158,1) 100%);
+}
+.btn-color{
+    border: none;
+    color: white;
+    font-weight: bold;
+    background: rgb(9,2,126);
+    background: linear-gradient(90deg, rgba(9,2,126,1) 0%, rgba(9,79,121,1) 33%, rgba(0,255,158,1) 100%);
+}
+.btn-color:hover{
+    color: rgba(0,255,158,1);
+}
+/* -------------------------- slider style------------------------ */
+#carouselExampleCaptions{
+    position: relative;
+}
+.carousel-item{
+    background: rgb(9,2,126);
+    background: linear-gradient(90deg, rgb(8, 2, 126) 30%, rgb(15, 15, 15) 70%);
+}
+.carousel-item img{
+    opacity: 0.6;
+}
+.carousel-control-prev-icon,.carousel-control-next-icon{
+    background-color: rgba(0,255,158,1);
+    border-radius: 10px;
+}
+.try{
+    padding: 20px;
+    font-size: 10px !important;
+}
+/* -------------------------end of header--------------------- */
+.Move_Home .Move_Home_Img img{
+    width:100%;
+}
+.Move_Home_Info h1 span,.Our_Services h1 span,.Questions_left h2 span,.Latest_News h1 span,.Contact_Us h1 span{
+  background: -webkit-linear-gradient(90deg, rgba(9,2,126,1) 0%, rgba(9,79,121,1) 33%, rgba(0,255,158,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Move_Home .Move_Home_Info p{
+    color: gray;
+    line-height: 33px;
+    text-align: justify;
+    margin-top: 30px;
+}
+.Move_Home .Move_Home_Info button,.Our_Services button,.Questions_left button,.Latest_News button,.Contact_Us form button{
+    background-color:rgba(0,255,158,1);
+    border: 1px solid rgba(0,255,158,1);
+    color: white;
+    font-weight: bold;
+    padding: 10px 25px;
+}
+.Move_Home .Move_Home_Info button:hover,.Our_Services button:hover,.Questions_left button:hover,.Latest_News button:hover,.Contact_Us form button:hover{
+    background-color: transparent;
+    color: rgba(0,255,158,1);
+    border: 1px solid rgba(0,255,158,1);
+}
+.Our_Services{
+    text-align: center;
+    margin-top: 120px;
+}
+.Our_Services p{
+    margin: 10px 10px;
+}
+.Our_Services h1 span{
+    margin-left: 18px;
+}
+.Our_Services_Item{
+    color: white;
+    border-radius: 10px;
+    height: 450px;
+    margin: 50px 0;
+    background-color:rgba(8, 2, 126, 0.87);
+}
+.Our_Services a{
+    text-decoration: none;
+    margin-right: 10px;
+    color: rgba(0,255,158,1);
+    transition: .5s;
+}
+.Our_Services a:hover{
+    color: white;
+}
+.Our_Services_Item:hover .Icon_bottom{
+    transform: rotate(135deg);
+}
+.Icon_bottom{
+    transition: .9s ease-in-out;
+}
+.Our_Services_Item .Our_Services_Item_Icon{
+    position: relative;
+    margin-bottom: 230px;
+}
+.Our_Services_Item .Our_Services_Item_Icon div{
+    position: absolute;
+    left: 19%;
+    top: 35px;
+    width: 160px;
+    height: 160px;
+    background-color: white;
+    border-radius: 10px;
+    z-index: 10;
+}
+.Our_Services_Item .Our_Services_Item_Icon img{
+    position: absolute;
+    width: 100px;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+.Call_Us{
+    padding: 30px 0;
+    background: rgb(9,2,126);
+    background: linear-gradient(90deg, rgba(9,2,126,1) 0%, rgba(137,217,184,1) 62%);
+}
+.Call_Us_Img img{
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 2px 3px 7px rgba(0, 255, 157, 0.774);
+    border: 8px solid rgba(11, 8, 68, 0.349) ;
+    transition: 1.8s;
+}
+.Call_Us_Img img:hover{
+    transform: rotate(360deg);
+}
+.Call_Us_Info h3,.Call_Us_Info p{
+    color: white;
+    text-align: justify;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 23px;
+}
+.Call_Us_Info h1{
+    width: fit-content;
+    padding-right: 40px;
+    position: relative;
+    font-size: 40px;
+    color:rgba(137,217,184,1);
+    -webkit-text-stroke: 0.2vw rgba(8, 2, 126, 0.253);
+}
+@media(max-width:553px){
+    .Call_Us_Info h1{
+        font-size: 27px;
+    }
+}
+.Call_Us_Info h1::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    color:rgb(14, 199, 122);
+    -webkit-text-stroke: 0vw rgba(8, 2, 126, 0.253);
+    border-right: 4px solid rgb(14, 199, 122);
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+@keyframes animate{
+    0%,10%,100%{
+        width: 0;
+    }
+    90%,70%{
+        width: 100%;
+    }
+}
+.Questions_left p{
+    text-align: justify;
+    margin-bottom: 30px;
+}
+.Questions_right .question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(8, 2, 126, 0.808);
+    color: white;
+    border-radius: 5px;
+}
+.Questions_right .question i{
+    cursor: pointer;
+}
+.Questions_right .answer{
+    text-align: justify;
+    line-height: 24px;
+    background-color: beige;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.2s ease;
+}
+.Questions_right .answer p{
+    padding: 10px;
+}
+.faq{
+    margin-bottom: 20px;
+}
+.faq.active .answer{
+    max-height: 300px;
+}
+.faq.active i{
+transform: rotate(180deg);
+}
+.Latest_News .Latest_item img{
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+   
+}
+.Latest_News .Latest_item:hover img{
+    transform: scale(1.2);
+}
+.Latest_News .Latest_item{
+    border: 1px solid rgb(14, 199, 122);
+    padding: 10px;
+    border-radius: 10px; overflow: hidden;
+}
+.my_footer{
+    background: rgb(9,2,126);
+    background: linear-gradient(90deg, rgba(9,2,126,1) 0%, rgba(137,217,184,1) 62%);
+}
